@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherApp</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg backnav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">WeatherApp</a>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" id="city" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline" type="submit" id="submit"><a class="btn btn-4"> Search</a></button>
+      </form>
+    </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="my-4 text-center "><i class="bi bi-cloud-moon-fill"></i>Weather for <span id="cityName"> </span></h1>
+    <main>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col " id="card">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal"> <a class="btn btn-2">Temperature</a></h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><span style='font-size:40px;'>&#8451;</span><small
+                  class="text-body-secondary fw-light"></small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Temperature is <span id="temp"></span></li>
+                <li>Min Temperature is <span id="min_temp"></span></li>
+                <li>Max Temperature is <span id="max_temp"></span></li>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal"><a class="btn btn-3">Humidity Info</a></h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">%<small class="text-body-secondary fw-light"></small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Wind Degree is <span id="wind_degrees"></span></li>
+                <li>Feels Like is <span id="feels_like"></span></li>
+                <li>Humidity is <span id="humidity"></span></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card mb-4 rounded-3 shadow-sm border-secondary">
+            <div class="card-header py-3 ">
+              <h4> <a class="btn btn-1">Sun Info</a></h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">km<small class="text-body-secondary fw-light">/hr</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Wind Speed is <span id="wind_speed"></span></li>
+                <li>Sunrise Time is <span id="sunrise"></span></li>
+                <li>Sunset Time is <span id="sunset"></span></li>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 4,
+      speed: 800,
+      scale: 1.03,
+      glare: true,
+      "max-glare": 0.5,
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

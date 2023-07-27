@@ -1,0 +1,70 @@
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?nature');
+    font-size: 70%;
+
+  }
+.backnav{
+  background-color: transparent;
+}
+nav a .navbar-brand{
+  font-size: 50px;
+  text-decoration: navy;
+  color: #eee;
+}
+#card {
+
+  background: rgba( 0, 0, 0, 0.30 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11.5px );
+  -webkit-backdrop-filter: blur( 11.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: white;
+  padding: 2em;
+  
+  }
+#card:hover{
+  color: #222;
+}
+
+.js-tilt-glare {
+  border-radius: 10px;
+}
+  
+.btn {
+    flex: 1 1 auto;
+    margin: 2px;
+    padding: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 100% auto;
+    color: white;
+   text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 8px #eee;
+    border-radius: 10px;
+   }
+  
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+  
+.btn-1 {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  }
+.btn-2 {
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  }
+.btn-3 {
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  }
+.btn-4 {
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  }
+  
+  
+
